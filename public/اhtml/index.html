@@ -1,0 +1,487 @@
+<!-- 
+==========================
+* Developer* : Amir Moahmmad Sharafi Nik
+========================== 
+-->
+
+<!DOCTYPE html>
+<!-- Head -->
+<html lang="fa" dir="rtl">
+  <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>GiahLand</title>
+       <link rel="stylesheet" href="/public/styles/app.css">
+       <link rel="stylesheet" href="/public/styles/final.css">
+       <link rel="icon" href="/public/IMG/header.png">
+      </head>
+
+<!-- Body -->
+<body class="font-Dana bg-gray-100" style="overflow-x: hidden;">      
+
+  <!-- Desktop Navbar  -->
+<header class="hidden md:block bg-gray-100 px-5 lg:px-10 py-[24px]"> 
+  <nav class="  flex justify-between gap-x-2 md:gap-x-5 px-12 items-center">
+    <!-- Left Side Navigation -->
+    <div>
+      <ul class="flex gap-x-3 lg:gap-x-5 items-center text-base lg:text-[20px]">
+        <li><a href="#" class="font-DanaDemibold text-Primary text-[27px] lg:text-[30px]">گیاه لند</a></li>
+        <li class="font-DanaMedium"><a href="#" class="text-Primary">صفحه اصلی</a></li>
+        <li class="font-DanaMedium"><a href="#">درباره ما</a></li>
+        <li class="font-DanaMedium"><a href="#">وبلاگ</a></li>
+        <li class="font-DanaMedium"><a href="#">تماس با ما</a></li>
+      </ul>
+    </div>
+    <!-- Right Side Navigation (Icons & Login) -->
+    <div class="flex items-center gap-x-4 text-[20px] cursor-pointer">
+      <!-- saerch icon -->
+      <div class="flex gap-x-3">
+         <!-- Search -->
+         <div style="border: 1px solid #417F56; padding: 10px 12px ; border-radius: 12px;">
+           <img src="/public/IMG/Svg/HedaerSVG (1).png" class="w-[22px] h-[22px]" alt="">
+         </div>
+         <!-- Shopping Icon -->
+         <div style="border: 1px solid #417F56; padding: 10px 12px ; border-radius: 12px;">
+           <img src="/public/IMG/Svg/HedaerSVG (3).png" class="w-[22px] h-[22px] " alt="">
+         </div>
+      </div>
+      <!-- login icon -->
+      <div class="flex gap-x-2 items-center border border-Primary rounded-lg " style="padding: 10px 16px;">
+        <img src="/public/IMG/Svg/HedaerSVG (2).png" class="w-[18px] h-[22px]" alt="">
+        <a href="#" class="hidden xl:inline-block text-Primary text-[18px] ">ورود | ثبت نام</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Navbar  -->
+<header class="block md:hidden bg-gray-100 px-5 py-[16px]">
+  <nav class="flex justify-between items-center px-4">
+    
+    <div class="flex items-center gap-x-4">
+      <div style="background-color: #dddadae7; padding: 15px 10px; border-radius: 9.5px; cursor: pointer;" id="menu-toggle" >
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 10H15.5V8.33333H0.5V10ZM0.5 5.83333H15.5V4.16667H0.5V5.83333ZM0.5 0V1.66667H15.5V0H0.5Z" fill="#121212"/>
+        </svg>
+      </div>
+    
+      <a href="#" class="font-DanaDemibold text-Primary text-base">گیاه لند</a>
+    </div>
+    
+    <!-- Mobile Menu Icon (Hamburger Menu) -->
+    <div class="cursor-pointer flex items-center gap-x-4" id="">
+      <div class="rounded-lg border border-Primary w-8 h-8 ">
+        <img src="/public/IMG/Svg/HedaerSVG (3).png" class=" " alt="" style="margin: 5px;">
+      </div>
+      <div class="border border-Primary rounded-lg w-8 h-8  ">
+        <img src="/public/IMG/Svg/HedaerSVG (2).png" alt="" class="w-5 h-5" style="margin: 5px;">
+      </div>
+    </div>
+  </nav>
+</header>
+
+ <!-- Mobile Navigation Menu ( Hidden)  -->
+<div id="mobile-menu" class="hidden bg-gray-100 px-5 py-[16px]"> 
+  <ul class="flex flex-col gap-y-4 text-base font-DanaDemibold items-center">
+    <li><a href="#" class="font-DanaMedium text-Primary">صفحه اصلی</a></li>
+    <li><a href="#">گیاه پزشک</a></li>
+    <li><a href="#">وبلاگ</a></li>
+    <li><a href="#">تماس با ما</a></li>
+  </ul>
+</div> 
+
+      
+      
+<hr>
+<!-- Start Main -->
+<main>
+    <!-- Section About SHOP -->
+    <section class="mt-[8.8rem]">
+        <div class="container mx-auto px-4">
+          <div class="grid  lg:grid-cols-12 gap-4">
+          
+            <!-- Right About -->
+            <div class=" lg:col-span-7 order-2 lg:order-1 text-center lg:text-right flex items-start justify-center lg:justify-start">
+              <div class="lg:mt-[3rem]">
+                <!-- Heading -->
+                <h1 class="font-DanaDemibold text-[24px] sm:text-[32px] lg:text-[38px]">
+                  خرید گیاه ,با
+                  <span class="text-Primary sm:text-[35px] lg:text-[42px]">گیاه لند!</span>
+                </h1>
+      
+                <!-- Description -->
+                <div class="mt-4 sm:mt-[1.5rem]">
+                  <span class="font-DanaMedium text-base sm:text-lg lg:text-xl leading-[28px] sm:leading-[32px] lg:leading-[34px]" style="color: #121212;">
+                    با گیاه لند، آنلاین گیاه خودت رو سفارش بده و از تخفیف‌های ویژه استفاده کن. علاوه بر این‌ها می‌تونی به صورت رایگان از گیاه پزشک سایت مشاوره بگیری.
+                  </span>
+                </div>
+      
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-y-3 sm:gap-x-5 mt-6 sm:mt-10">
+                  <!-- Discount Button -->
+                  <div class="bg-Primary w-full sm:w-[235px] h-[56px] rounded-xl flex items-center justify-center">
+                    <span class="text-white font-DanaMedium cursor-pointer text-[14px] md:text-[18px] ">گیاهان تخفیف دار</span>
+                  </div>
+                  
+                  <!-- Consultation Button -->
+                  <div class="bg-transparent w-full sm:w-[235px] h-[56px] rounded-xl flex items-center justify-center gap-x-3 border-4 border-dashed border-Primary">
+                    <span class="text-Primary font-DanaMedium cursor-pointer text-[14px] md:text-[18px] ">مشاوره با گیاه پزشک</span>
+                    <img src="/public/IMG/Svg/Vector (1).png" alt="">
+                  </div>
+                </div>
+                
+                <!-- Statistics -->
+                <div class="mt-10 lg:mt-12">
+                  <div class="flex flex-wrap justify-center lg:justify-start gap-6 lg:gap-24">
+                    <div class="text-center">
+                      <p class="text-Primary text-[24px] sm:text-[28px] lg:text-[32px] font-DanaDemibold">۱۲۸ +</p>
+                      <p class="text-Primary font-DanaDemibold text-base text-md-[18.3px] text-lg-[20px]">گیاه کادویی</p>
+                    </div>
+                    <div class="text-center">
+                      <p class="text-Primary text-[24px] sm:text-[28px] lg:text-[32px] font-DanaDemibold">۲۳۴ +</p>
+                      <p class="text-Primary font-DanaDemibold text-base text-md-[18.3px] text-lg-[20px]">گیاه تزغینی</p>
+                    </div>
+                    <div class="text-center">
+                      <p class="text-Primary text-[24px] sm:text-[28px] lg:text-[32px] font-DanaDemibold">۹۴۳ +</p>
+                      <p class="text-Primary font-DanaDemibold text-base text-md-[18.3px] text-lg-[20px]">گیاه کادویی</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Left Section (Image) -->
+            <div class=" lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
+              <div>
+                <img src="/public/IMG/header.png" class="rounded-full sm:rounded-none w-full max-w-[90%] sm:max-w-none" alt="">
+              </div>
+            </div>
+          
+          </div>
+        </div>      
+      </section>
+      
+    
+
+    <!-- Start section Zemanat -->
+    <section class="mt-[8.8rem]">
+        <div class="container">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 section -->
+            <div class="flex flex-col items-center justify-center text-center">
+              <div class="w-[80px] h-[80px] bg-Special rounded-[40px] flex items-center justify-center overflow-hidden">
+                <img src="/public/IMG/Svg/svg.Zemanat (2).png" alt="" width="33px" height="25px">
+              </div>
+              <p class="text-base sm:text-[20px] font-DanaDemibold mt-4">تحویل درب منزل</p>
+              <p class="text-sm sm:text-base font-DanaMedium" style="color: #000000;">با ایجاد آدرس منزل خود در پروفایل کاربری، محصول خود را درب منزل تحویل بگیرید</p>
+            </div>
+      
+            <!-- Item 2 section -->
+            <div class="flex flex-col items-center justify-center text-center">
+              <div class="w-[80px] h-[80px] bg-Special rounded-[40px] flex items-center justify-center overflow-hidden">
+                <img src="/public/IMG/Svg/svg.Zemanat.png" alt="" width="33px" height="25px">
+              </div>
+              <p class="text-base sm:text-[20px] font-DanaDemibold mt-4">ضمانت محصول</p>
+              <p class="text-sm sm:text-base font-DanaMedium" style="color: #000000;">به مدت دو هفته پس از دریافت محصول در صورت وجود مشکل میتوانید مرجوع کنید</p>
+            </div>
+      
+            <!-- Item 3  section-->
+            <div class="flex flex-col items-center justify-center text-center">
+              <div class="w-[80px] h-[80px] bg-Special rounded-[40px] flex items-center justify-center overflow-hidden">
+                <img src="/public/IMG/Svg/svg.Zemanat (1).png" alt="" width="33px" height="25px">
+              </div>
+              <p class="text-base sm:text-[20px] font-DanaDemibold mt-4">پرداخت درب منزل</p>
+              <p class="text-sm sm:text-base font-DanaMedium" style="color: #000000;">برای ایجاد اطمینان خاطر مشتریان، علاوه بر پرداخت آنلاین امکان پرداخت درب منزل وجود دارد</p>
+            </div>
+          </div>
+        </div>
+    </section>
+   
+
+    <!-- Style Section Frame -->
+    <div class="Fra mt-[8.8rem]">
+       <div class="container">
+           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-2">
+             <!--img section Frame -->
+             <div class="flex justify-center items-center">
+               <img src="/public/IMG/Frame 142.png" alt="" class="max-w-full">
+             </div>
+             
+             <!--Left  img section Frame -->
+             <div class="flex justify-center items-center">
+               <img src="/public/IMG/Frame 144.png" alt="" class="max-w-full">
+             </div>
+           </div>
+       </div>
+    </div>
+
+   <!-- Section Giah Apartemani -->
+   <section class="mt-[10rem] mb-[10rem]">
+    <!-- TITTLE GIAH -->
+    <h3 class="text-Primary text-base sm:text-[24px] text-center font-DanaDemibold lg:mr-[2.5rem]" style="margin-bottom: 2.2rem;">
+      گیاهان آپارتمانی
+    </h3>
+  
+    <!-- ALL PARENT STYLE -->
+    <div class="flex justify-center items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+  
+        <!-- ONE CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg: -10">
+          <img src="/public/IMG/Frame 11 (5).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[19px] font-DanaDemibold">گیاه طبیعی بابا آدم</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">852,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- TWO CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/APARTEMAN (2).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی یوکا</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">560,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- TREE CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/APARTEMAN (3).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی سانسوریا سبز</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">250,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- FOURTH CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/APARTEMAN (4).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی ساکولنت</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">۵۷,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- Img GIAH APARTEMAN -->
+    <div class="mt-[8.8rem]">
+       <div class="container ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
+          <div class="mx-auto">
+            <img src="/public/IMG/img Giah/Frame 145.png" alt="">
+          </div>
+          <div class="mx-auto">
+            <img src="/public/IMG/img Giah/Frame 146.png" alt="">
+          </div>
+          <div class="mx-auto">
+            <img src="/public/IMG/img Giah/Frame 148.png" alt="">
+          </div>
+          <div class="mx-auto">
+            <img src="/public/IMG/img Giah/Frame 147.png" alt="">
+          </div>
+        </div>
+       </div>
+    </div>
+   </section>
+  
+  <!-- Section Services  -->
+  <section class="mt-[8.8rem] mb-[8.8rem]">
+    <div class="container">
+      <!-- Header Services  -->
+      <h1 class="text-Primary text-base sm:text-[24px] text-center font-DanaDemibold lg:mr-[2.5rem]" style="margin-bottom: 4.7rem;">خدمات گیاه پزشکی </h1>
+      <!-- Grid Services -->
+      <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4">
+        <!-- Parent Info -->
+        <div class="flex items-center mt-6 lg:mr-0 gap-6 ">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg SERVICES (3).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base leading-6 ">چک کردن اسید خاک</p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] leading-6" style="color: #353535; margin-top: 6px;">با استفاده از ابزار مخصوص اسید خاک گیاه چک میشود</p>
+          </div>
+        </div>
+         <!-- Parent Info 2 -->
+        <div class="flex items-center mt-6 lg:mr-6 gap-6 ">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg SERVICES (1).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base leading-6 "> برسی مواد معدنی خاک  </p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] leading-6" style="color: #353535; margin-top: 6px;">یکی از موارد مهم خاک، مقدار مواد معدنی آن است که با دقت برسی میشود</p>
+          </div>
+        </div>
+        <!-- Parent Info 3 -->
+        <div class="flex items-center mt-6  lg:mr-6 gap-6 ">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg SERVICES (4).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base leading-6 ">مشاهده بهترین دما</p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] leading-6" style="color: #353535; margin-top: 6px;">از موارد مهم برای گیاه مقدار دمای محیط است که باید اندازه گیری شود</p>
+          </div>
+        </div>
+        <!-- Parent Info 4 -->
+        <div class="flex items-center mt-6 lg:mr-6 gap-6">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg SERVICES (2).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base leading-6 ">برسی آسیب های احتمالی</p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] leading-6" style="color: #353535; margin-top: 6px;">تمامی آسیب های احتمالی برسی میگردد تا از وقوع مشکلات آینده جلوگیری شود</p>
+          </div>
+        </div>
+        <!-- Parent Info 5 -->
+        <div class="flex items-center mt-6  gap-6">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg secrives 4 .png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base  ">از بین بردن عناصر آلوده خاک</p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] " style="color: #353535; margin-top: 7px;">با استفاده از روش های نوین،عناصر آلوده از خاک گیاهان شما جمع آوری میشوند</p>
+          </div>
+        </div>
+        <!-- Parent Info 6 -->
+        <div class="flex items-center mt-6 lg:mr-6 gap-6">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg ServicES  (3).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base  ">برسی ظاهر</p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] " style="color: #353535; margin-top: 7px;">ظاهر گیاه بیانگر مسائل مهمی هست.میتوان با مشاهده ظاهر گیاه آفات و ... را متوجه شد</p>
+          </div>
+        </div>
+        <!-- Parent Info 7 -->
+        <div class="flex items-center mt-6 lg:mr-6 gap-6">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg Services 2 (4).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base">اندازه گیری EC </p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] " style="color: #353535; margin-top: 7px;">این اندازه گیری نشانی از مقدار کل مواد مغذی موجود برای گیاهان می‌دهد</p>
+          </div>
+        </div>
+        <!-- Parent Info 8 -->
+        <div class="flex items-center mt-6 lg:mr-6 gap-6">
+          <!-- IMG Info -->
+          <div  style="width: 68px ;height: 68px; border-radius: 38px; padding: 14px; background-color:#E5F2E9; display: flex; align-items: center; justify-content: center;">
+            <img src="/public/IMG/Svg/Svg Services/Svg Services End  (1).png" class=" sm:w-6 h-6" alt="">
+          </div>
+          <!-- Text Info -->
+          <div>
+            <p class="font-DanaDemibold text-xs sm:text-base  ">   ارائه مکمل </p>
+            <p class="font-DanaMedium text-xs sm:text-[14px] " style="color: #353535; margin-top: 7px;">برای رشد بهتر گیاهان و رفع آفات از مکمل ها میتوان استفاده کرد</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Section Giah Tazini -->
+   <section class="mt-[10rem] mb-[10rem]">
+    <!-- TITTLE GIAH -->
+    <h3 class="text-Primary text-base sm:text-[24px] text-center font-DanaDemibold lg:mr-[2.5rem]" style="margin-bottom: 2.2rem;">
+      گیاهان تزئینی
+    </h3>
+    <!-- ALL PARENT STYLE -->
+    <div class="flex justify-center items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+  
+        <!-- ONE CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg: -10">
+          <img src="/public/IMG/Img tazini/Frame 11 (1).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[19px] font-DanaDemibold">گیاه طبیعی کراسولا</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">۹۰,۰۰۰  تومان </p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- TWO CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/Img tazini/Frame 11 (2).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی یشم</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">1,500,000 تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- TREE CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/Img tazini/Frame 11 (3).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی بونسای پاچیرا</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">۸۸۰,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+  
+        <!-- FOUR CART -->
+        <div class="w-[288px] h-[461px] p-4 bg-[#D9D9D9] rounded-xl mx-auto lg:mr-10">
+          <img src="/public/IMG/Img tazini/Frame 11 (4).png" class="p-4 w-full pb-6" alt="">
+          <p class="mt-6 inline-block text-base sm:text-[18px] font-DanaDemibold">گیاه طبیعی کراسولا خرفه ای</p>
+          <div class="flex justify-between mt-6">
+            <p class="inline-block font-DanaDemibold">قیمت:</p>
+            <p class="inline-block font-DanaDemibold">169,۰۰۰ تومان</p>
+          </div>
+          <div class="bg-Primary w-full sm:w-[256px] h-10 rounded-2xl flex items-center justify-center mt-4">
+            <button class="font-DanaMedium text-[14px] text-white">مشاهده بیشتر</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+</main>
+
+<script>
+
+    const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
